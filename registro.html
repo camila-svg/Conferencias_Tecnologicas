@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro | UAM Conferencias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Registro de Participantes</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  <main class="registro">
+    <form id="registroForm">
+      
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" />
+      <div class="error-msg"></div>
+  
+      
+      <label for="correo">Correo Institucional:</label>
+      <input type="email" id="correo" name="correo" />
+      <div class="error-msg"></div>
+  
+      
+      <label for="carrera">Carrera:</label>
+      <input type="text" id="carrera" name="carrera" />
+      <div class="error-msg"></div>
+  
+      
+      <fieldset>
+        <legend>Seleccione las conferencias a asistir:</legend>
+        <label><input type="checkbox" name="conferencias" value="GitHub" /> Uso de GitHub en proyectos colaborativos</label>
+        <label><input type="checkbox" name="conferencias" value="Docker" /> Introducción a Docker para entornos de desarrollo</label>
+        <label><input type="checkbox" name="conferencias" value="Linux" /> Configuración básica de servidores Linux</label>
+      </fieldset>
+      <div class="error-msg"></div>
+  
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Universidad Americana (UAM). Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
